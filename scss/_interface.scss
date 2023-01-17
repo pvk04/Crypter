@@ -6,6 +6,7 @@ body{
 .button{
     padding: 12px 16px;
     color: rgba(252, 252, 253, 1);
+    cursor: pointer;
     @include dmsans;
     font-size: 15px;
     line-height: 16px;
@@ -16,6 +17,7 @@ body{
 
 .button-o{
     padding: 12px 16px;
+    cursor: pointer;
     @include dmsans;
     font-size: 15px;
     line-height: 16px;
