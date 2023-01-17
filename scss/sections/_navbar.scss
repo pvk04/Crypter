@@ -27,8 +27,9 @@
         background: $border-color;
     }
     &__item{
-        &-grey{
-            color: $text-color-light;
+        color: $text-color-light;
+        &-active{
+            color: $text-color
         }
     }
     &__search{
