@@ -1,0 +1,113 @@
+.auction{
+    padding-top: 128px;
+    padding-bottom: 135px;
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__video{
+        border-radius: 16px;
+    }
+}
+
+.auctionpanel{
+    display: block;
+    max-width: 350px;
+    &__title{
+        margin-bottom: 20px;
+        @include dmsans;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.02em;
+    }
+
+    &__about{
+        display: flex;
+    }
+    &__block{
+        display: flex;
+        &:not(:first-child){
+            margin-left: 65px;
+        }
+    }
+    &__img{
+        border-radius: 48px;
+        margin-right: 8px;
+    }
+    &__seller{
+        display: flex;
+        flex-direction: column;
+    }
+    &__span{
+        @include regular;
+        color: $text-color-light;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    &__text{
+        @include medium;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+        padding: 35px 60px;
+        text-align: center;
+        border: 2px solid #E6E8EC;
+        box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+        border-radius: 24px;
+    }
+    &__bidtitle{
+        @include medium;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__bid{
+        @include dmsans;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    &__dollar{
+        margin-bottom: 20px;
+        @include semibold;
+        font-size: 24px;
+        line-height: 32px;
+        color: rgba(119, 126, 144, 1);
+    }
+    &__end{
+        @include medium;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        &-first{
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.timer{
+    display: flex;
+    justify-content: space-around;
+    &__time{
+        display: flex;
+        flex-direction: column;
+    }
+    &__value{
+        @include dmsans;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    &__text{
+        @include medium;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(119, 126, 144, 1);
+    }
+}
