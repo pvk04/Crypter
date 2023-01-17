@@ -94,8 +94,11 @@ body {
   border-radius: 2px;
   background: rgb(230, 232, 236);
 }
-.navbar__item-grey {
+.navbar__item {
   color: rgb(119, 126, 144);
+}
+.navbar__item-active {
+  color: rgb(35, 38, 47);
 }
 .navbar__search {
   padding-left: 15px;
@@ -144,4 +147,29 @@ body {
 .logo__text {
   font-family: "Poppins Semibold", sans-serif;
   font-size: 24px;
+}
+
+.hero {
+  padding-top: 125px;
+}
+.hero-wrap {
+  display: block;
+  text-align: center;
+}
+.hero__text {
+  margin-bottom: 5px;
+  color: rgb(119, 126, 144);
+  text-transform: uppercase;
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
+.hero__title {
+  margin-bottom: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+}
+.hero__button {
+  margin-top: auto;
 }/*# sourceMappingURL=style.css.map */
