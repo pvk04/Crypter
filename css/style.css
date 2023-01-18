@@ -258,11 +258,17 @@ body {
   line-height: 24px;
 }
 .auctionpanel__buttons {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
 .auctionpanel__buttons-first {
   margin-bottom: 8px;
+}
+.auctionpanel__navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+  gap: 5px;
 }
 
 .timer {
@@ -283,4 +289,30 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: rgb(119, 126, 144);
+}
+
+.navigation__button {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: none;
+  border-radius: 50%;
+  border: none;
+}
+.navigation__button-active {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  border: 2px solid rgb(230, 232, 236);
+}
+.navigation__arrow {
+  display: block;
+  margin: auto;
+}
+
+.feed {
+  padding-bottom: 128px;
 }/*# sourceMappingURL=style.css.map */
