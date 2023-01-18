@@ -84,11 +84,18 @@
     }
 
     &__buttons{
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         &-first{
             margin-bottom: 8px;
         }
+    }
+
+    &__navigation{
+        display: grid;
+        grid-template-columns: repeat(2, 40px);
+        gap: 5px;
     }
 }
 
@@ -109,5 +116,31 @@
         font-size: 16px;
         line-height: 24px;
         color: rgba(119, 126, 144, 1);
+    }
+}
+
+.navigation {
+    &__button {
+        width: 40px;
+        height: 40px;
+        display: block;
+        background: none;
+        border-radius: 50%;
+        border: none;
+    }
+
+    &__button-active {
+        width: 40px;
+        height: 40px;
+        display: block;
+        background: none;
+        border-radius: 50%;
+        border: none;
+        border: 2px solid $border-color;
+    }
+
+    &__arrow {
+        display: block;
+        margin: auto;
     }
 }
