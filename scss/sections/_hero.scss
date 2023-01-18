@@ -23,3 +23,19 @@
     }
 }
     
+@media (max-width: 1170px){
+    .hero{
+        padding-top: 112px;
+    }
+}
+
+@media (max-width: 991px){
+    .hero{
+        padding-top:  64px;
+        &__title{
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    
+}

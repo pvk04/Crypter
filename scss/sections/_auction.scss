@@ -6,6 +6,7 @@
         justify-content: space-between;
     }
     &__video{
+        object-fit: cover;
         border-radius: 16px;
     }
 }
@@ -142,5 +143,42 @@
     &__arrow {
         display: block;
         margin: auto;
+    }
+}
+
+@media (max-width: 1170px){
+    .auction{
+        padding: 112px 0px;
+        &__video{
+            max-width: 528px;
+        }
+    }
+    .auctionpanel{
+        max-width: 300px;
+        &__block {
+            &:not(:first-child) {
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .auction{
+        padding: 64px 0px;
+        &-wrap{
+            display: block;
+            text-align: center;
+        }
+        &__video{
+            margin-bottom: 30px;
+            max-width: 311px;
+        }
+    }
+    .auctionpanel{
+        margin: auto;
+        &__navigation{
+            justify-content: center;
+        } 
     }
 }
