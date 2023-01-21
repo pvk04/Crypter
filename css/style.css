@@ -338,6 +338,7 @@ body {
   background: none;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 .navigation__button-active {
   width: 40px;
@@ -347,6 +348,7 @@ body {
   border-radius: 50%;
   border: none;
   border: 2px solid rgb(230, 232, 236);
+  cursor: pointer;
 }
 .navigation__arrow {
   display: block;
