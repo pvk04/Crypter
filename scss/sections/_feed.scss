@@ -1,3 +1,152 @@
 .feed{
     padding-bottom: 128px;
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__column-1{
+        display: block;
+        max-width: 448px;
+        &-img{
+            margin-bottom: 22px;
+            border-radius: 12px;
+        }
+        &-info{
+            display: flex;
+        }
+        &-profile{
+            margin-right: 15px;
+            width: 48px;
+            height: 48px;
+        }
+        &-about{
+            display: flex;
+            flex-direction: column;
+        }
+        &-title{
+            @include semibold;
+            font-size: 24px;
+            line-height: 32px;
+            color: $text-color;
+        }
+        &-stock{
+            @include medium;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &-price{
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+        }
+        &-text{
+            @include regular;
+            color: $text-color-light;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    &__column-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 350px;
+    }
+
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        &-img{
+            margin-right: 24px;
+            width: 160px;
+            height: 148px;
+            border-radius: 12px;
+        }
+        &-about{
+            margin: auto 0;
+            width: 100%
+        }
+        &-name{
+            display: flex;
+            margin-bottom: 9px;
+            @include medium;
+            font-size: 16px;
+            line-height: 24px;
+            word-break: break-all;
+        }
+        &-info{
+            display: flex;
+            margin-bottom: 17px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-profile{
+            width: 24px;
+            height: 24px;
+        }
+        &-stock{
+            color: $text-color-light;
+            @include medium;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &-button{
+            padding: 8px 12px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__column-3{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid $border-color;
+        &-title{
+            color: $text-color-light;
+            @include semibold;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        &-button{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 14px;
+        }
+    }
+
+    &__creator{
+        padding: 24px 0;
+        display: flex;
+        &:nth-child(-n+4){
+           border-bottom: 1px solid $border-color; 
+        }
+        &-profile{
+            margin-right: 15px;
+            width: 56px;
+            height: 56px;
+        }
+        &-about{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &-name{
+            @include medium;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &-value{
+            @include semibold;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        &-eth{
+            text-transform: uppercase;
+            color: $text-color-light;
+            @include regular;
+        }
+    }
 }

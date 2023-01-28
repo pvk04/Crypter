@@ -28,7 +28,7 @@
     }
     &__item{
         color: $text-color-light;
-        &-active{
+        &_active{
             color: $text-color
         }
     }
@@ -84,7 +84,7 @@
 
 @media (max-width: 1170px){
     .navbar{
-        &__item, &__line, &__item-active{
+        &__item, &__line, &__item_active{
             display: none;
         }
     }

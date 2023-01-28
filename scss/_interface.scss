@@ -25,3 +25,17 @@ body{
     border: 2px solid $border-color;
     border-radius: 90px;
 }
+
+.profile-pic{
+    border-radius: 48px;
+}
+
+.bid{
+    padding: 6px;
+    color: rgba(69, 178, 107, 1);
+    @include bold;
+    font-size: 12px;
+    line-height: 12px;
+    border: 2px solid #45B36B;
+    border-radius: 4px;
+}

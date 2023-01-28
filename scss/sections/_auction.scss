@@ -32,7 +32,6 @@
         }
     }
     &__img{
-        border-radius: 48px;
         margin-right: 8px;
     }
     &__seller{
@@ -88,7 +87,7 @@
         margin-bottom: 40px;
         display: flex;
         flex-direction: column;
-        &-first{
+        &_first{
             margin-bottom: 8px;
         }
     }

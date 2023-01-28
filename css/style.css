@@ -76,6 +76,20 @@ body {
   border-radius: 90px;
 }
 
+.profile-pic {
+  border-radius: 48px;
+}
+
+.bid {
+  padding: 6px;
+  color: rgb(69, 178, 107);
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  border: 2px solid #45B36B;
+  border-radius: 4px;
+}
+
 .navbar {
   border-bottom: 1px solid rgb(230, 232, 236);
 }
@@ -108,7 +122,7 @@ body {
 .navbar__item {
   color: rgb(119, 126, 144);
 }
-.navbar__item-active {
+.navbar__item_active {
   color: rgb(35, 38, 47);
 }
 .navbar__search {
@@ -161,7 +175,7 @@ body {
 }
 
 @media (max-width: 1170px) {
-  .navbar__item, .navbar__line, .navbar__item-active {
+  .navbar__item, .navbar__line, .navbar__item_active {
     display: none;
   }
 }
@@ -247,7 +261,6 @@ body {
   margin-left: 65px;
 }
 .auctionpanel__img {
-  border-radius: 48px;
   margin-right: 8px;
 }
 .auctionpanel__seller {
@@ -302,7 +315,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.auctionpanel__buttons-first {
+.auctionpanel__buttons_first {
   margin-bottom: 8px;
 }
 .auctionpanel__navigation {
@@ -390,4 +403,149 @@ body {
 }
 .feed {
   padding-bottom: 128px;
+}
+.feed-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.feed__column-1 {
+  display: block;
+  max-width: 448px;
+}
+.feed__column-1-img {
+  margin-bottom: 22px;
+  border-radius: 12px;
+}
+.feed__column-1-info {
+  display: flex;
+}
+.feed__column-1-profile {
+  margin-right: 15px;
+  width: 48px;
+  height: 48px;
+}
+.feed__column-1-about {
+  display: flex;
+  flex-direction: column;
+}
+.feed__column-1-title {
+  font-family: "Poppins Semibold", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(35, 38, 47);
+}
+.feed__column-1-stock {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.feed__column-1-price {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.feed__column-1-text {
+  font-family: "Poppins Regular", sans-serif;
+  color: rgb(119, 126, 144);
+  font-size: 12px;
+  line-height: 20px;
+}
+.feed__column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 350px;
+}
+.feed__item {
+  display: flex;
+  align-items: flex-start;
+}
+.feed__item-img {
+  margin-right: 24px;
+  width: 160px;
+  height: 148px;
+  border-radius: 12px;
+}
+.feed__item-about {
+  margin: auto 0;
+  width: 100%;
+}
+.feed__item-name {
+  display: flex;
+  margin-bottom: 9px;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  word-break: break-all;
+}
+.feed__item-info {
+  display: flex;
+  margin-bottom: 17px;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed__item-profile {
+  width: 24px;
+  height: 24px;
+}
+.feed__item-stock {
+  color: rgb(119, 126, 144);
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.feed__item-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.feed__column-3 {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgb(230, 232, 236);
+}
+.feed__column-3-title {
+  color: rgb(119, 126, 144);
+  font-family: "Poppins Semibold", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+.feed__column-3-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+}
+.feed__creator {
+  padding: 24px 0;
+  display: flex;
+}
+.feed__creator:nth-child(-n+4) {
+  border-bottom: 1px solid rgb(230, 232, 236);
+}
+.feed__creator-profile {
+  margin-right: 15px;
+  width: 56px;
+  height: 56px;
+}
+.feed__creator-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.feed__creator-name {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.feed__creator-value {
+  font-family: "Poppins Semibold", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+.feed__creator-eth {
+  text-transform: uppercase;
+  color: rgb(119, 126, 144);
+  font-family: "Poppins Regular", sans-serif;
 }/*# sourceMappingURL=style.css.map */
