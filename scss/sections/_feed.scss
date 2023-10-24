@@ -114,6 +114,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            margin-top: auto;
             font-size: 14px;
         }
     }
@@ -121,7 +122,7 @@
     &__creator{
         padding: 24px 0;
         display: flex;
-        &:nth-child(-n+4){
+        &:not(:last-child){
            border-bottom: 1px solid $border-color; 
         }
         &-profile{

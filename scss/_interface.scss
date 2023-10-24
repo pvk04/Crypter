@@ -1,41 +1,82 @@
-body{
-    @include medium;
-    color: $text-color;
+body {
+	@include medium;
+	color: $text-color;
 }
 
-.button{
-    padding: 12px 16px;
-    color: rgba(252, 252, 253, 1);
-    cursor: pointer;
-    @include dmsans;
-    font-size: 15px;
-    line-height: 16px;
-    background: #3772FF;
-    border: none;
-    border-radius: 90px;
+p {
+	margin: 0;
 }
 
-.button-o{
-    padding: 12px 16px;
-    cursor: pointer;
-    @include dmsans;
-    font-size: 15px;
-    line-height: 16px;
-    background: none;
-    border: 2px solid $border-color;
-    border-radius: 90px;
+a {
+	text-decoration: none;
 }
 
-.profile-pic{
-    border-radius: 48px;
+.button {
+	padding: 12px 16px;
+	color: rgba(252, 252, 253, 1);
+	cursor: pointer;
+	@include dmsans;
+	font-size: 15px;
+	line-height: 16px;
+	background: #3772ff;
+	border: none;
+	border-radius: 90px;
 }
 
-.bid{
-    padding: 6px;
-    color: rgba(69, 178, 107, 1);
-    @include bold;
-    font-size: 12px;
-    line-height: 12px;
-    border: 2px solid #45B36B;
-    border-radius: 4px;
+.button-o {
+	padding: 12px 16px;
+	cursor: pointer;
+	@include dmsans;
+	font-size: 15px;
+	line-height: 16px;
+	background: none;
+	border: 2px solid $border-color;
+	border-radius: 90px;
+}
+
+.profile-pic {
+	border-radius: 48px;
+}
+
+.bid {
+	padding: 6px;
+	color: rgba(69, 178, 107, 1);
+	@include bold;
+	font-size: 12px;
+	line-height: 12px;
+	border: 2px solid #45b36b;
+	border-radius: 4px;
+}
+
+.line {
+	height: 1px;
+	width: 100%;
+	background: $border-color;
+}
+
+.inputWithButton{
+	display:flex;
+	flex-direction:row;
+	padding:3px;
+	border:1px solid $border-color;
+	border-radius: 50px;
+	&:focus-within { 
+		outline: 1px solid blue 
+	}
+	input{
+		@include regular;
+		flex-grow:2;
+		padding: 3px;
+		border:none;
+		font-size: 14px;
+	}
+	input:focus {
+		outline: none;
+	}
+	button{
+		border:1px solid #3772FF;
+		border-radius: 50px;
+		background:#3772FF;
+		color:white;
+	}
 }

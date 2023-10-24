@@ -14,13 +14,13 @@
 				<div class="container">
 					<div class="navbar-wrap">
 						<div class="navbar-wrap__left">
-							<div class="logo navbar__logo">
+							<a href="#" class="logo navbar__logo">
 								<img src="img/logo.png" alt="" class="logo__img" />
 								<strong class="logo__text">crypter</strong>
-							</div>
+							</a>
 							<div class="navbar__line"></div>
-							<span class="navbar__item_active">Discover</span>
-							<span class="navbar__item">How it work</span>
+							<a href="#discover" class="navbar__item_active">Discover</a>
+							<a href="#howitwork" class="navbar__item">How it work</a>
 						</div>
 						<div class="navbar-wrap__right">
 							<input type="text" class="navbar__search" placeholder="Search" />
@@ -227,11 +227,45 @@
 		<!-- /.main -->
 
 		<footer class="footer">
+			<div class="line footer__line"></div>
 			<div class="container">
 				<div class="footer-wrap">
-					<div class="logo navbar__logo">
-						<img src="img/logo.png" alt="" class="logo__img" />
-						<strong class="logo__text">crypter</strong>
+					<div class="footer__column">
+						<a href="#" class="logo">
+							<img src="img/logo.png" alt="" class="logo__img" />
+							<strong class="logo__text">crypter</strong>
+						</a>
+						<p class="footer__tagline">the new creative <br> economy.</p>
+					</div>
+					<div class="footer__column">
+						<div class="footer__column-caption">
+							<span>Stacks</span>
+							<span class="footer__more-icon">></span>
+						</div>
+						<nav class="footer__nav">
+							<a href="#discover" class="footer__column-link">Discover</a>
+							<a href="#connectwallet" class="footer__column-link">Connect wallet</a>
+							<a href="#createitem" class="footer__column-link">Create item</a>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div class="footer__column-caption">
+							<span>Info</span>
+							<span class="footer__more-icon">></span>
+						</div>
+						<nav class="footer__nav">
+							<a href="#download" class="footer__column-link">Download</a>
+							<a href="#demos" class="footer__column-link">Demos</a>
+							<a href="#support" class="footer__column-link">Support</a>
+						</nav>
+					</div>
+					<div class="footer__column footer__column--last">
+						<span class="footer__column-caption">Join newsletter</span>
+						<p class="footer__column-text">Subscribe our newsletter to get more free design course and resource</p>
+						<form class="inputWithButton">
+							<input type="email" id="emailInput" placeholder="Enter your email">
+							<button>→</button>
+						</form>
 					</div>
 				</div>
 				<!-- /.footer-wrap -->
