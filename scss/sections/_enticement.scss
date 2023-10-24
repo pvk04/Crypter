@@ -1,72 +1,72 @@
-.enticement{
-    &-wrap{
-        display: flex;
-        padding: 80px 0;
-    }
-    &__info{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        gap: 15px;
-    }
-    &__subtitle{
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 700;
-        color: $text-color-light;
-    }
-    &__title{
-        @include dmsans;
-        font-size: 60px;
-        font-weight: 700;
-    }
-    &__text{
-        @include regular;
-        color: $text-color-light;
-    }
-    &__buttons{
-        display: flex;
-        margin-top: 30px;
-        gap: 15px;
-    }
-    &__picture{
-        height: 640px;
-        width: 640px;
-    }
+.enticement {
+	&-wrap {
+		display: flex;
+		padding: 80px 0;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		gap: 15px;
+	}
+	&__subtitle {
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 700;
+		color: $text-color-light;
+	}
+	&__title {
+		@include dmsans;
+		font-size: 60px;
+		font-weight: 700;
+	}
+	&__text {
+		@include regular;
+		color: $text-color-light;
+	}
+	&__buttons {
+		display: flex;
+		margin-top: 30px;
+		gap: 15px;
+	}
+	&__picture {
+		height: 640px;
+		width: 640px;
+	}
 }
 
-@media (max-width: 1170px){
-    .enticement{
-        &__picture{
-            height: 416px;
-            width: 416px;
-        }
-    }
+@media (max-width: 1170px) {
+	.enticement {
+		&__picture {
+			height: 416px;
+			width: 416px;
+		}
+	}
 }
 
-@media (max-width: 991px){
-    .enticement{
-        &-wrap{
-            flex-direction: column;
-            padding: 60px 0;
-            text-align: center;
-        }
-        &__line{
-            display: none;
-        }
-        &__subtitle{
-            font-size: 12px;
-        }
-        &__title{
-            font-size: 48px;
-        }
-        &__buttons{
-            flex-direction: column;
-        }
-        &__picture{
-            padding-top: 40px;
-            height: 311px;
-            width: 311px;
-        }
-    }
+@media (max-width: 991px) {
+	.enticement {
+		&-wrap {
+			flex-direction: column;
+			padding: 60px 0;
+			text-align: center;
+		}
+		&__line {
+			display: none;
+		}
+		&__subtitle {
+			font-size: 12px;
+		}
+		&__title {
+			font-size: 48px;
+		}
+		&__buttons {
+			flex-direction: column;
+		}
+		&__picture {
+			padding-top: 40px;
+			height: 311px;
+			width: 311px;
+		}
+	}
 }
